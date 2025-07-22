@@ -13,4 +13,4 @@ guess:
 			echo "High. Try again"; \
 		fi; \
 	done; \
-	echo "Thanks for entering $$response. Congratulations, this is right. End program."
+	echo "Thanks for entering $$response. Congratulate, this is right. End program."
