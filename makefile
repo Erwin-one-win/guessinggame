@@ -14,3 +14,12 @@ guess:
 		fi; \
 	done; \
 	echo "Thanks for entering $$response. Congratulate, this is right. End program."
+
+README.md: guessinggame.sh Makefile
+	@echo "# guessinggame" > README.md
+	@echo "" >> README.md
+	@echo "Generation date and time：" $$(date) >> README.md
+	@echo "" >> README.md
+	@echo "guessinggame.sh Number of lines of script code：" $$(wc -l < guessinggame.sh) >> README.md
+
+readme: README.md
